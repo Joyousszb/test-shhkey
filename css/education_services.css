@@ -1,0 +1,29 @@
+.bigbox{
+	height: 550px;
+}
+
+.information-dl .videos{
+	width: 350px;
+	height: 240px;
+	float: left;
+	margin-right: 16px;	
+}
+
+
+.videos img{
+	width: 100%;
+	height: 200px;
+}
+.information-dl .videos p{
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	text-align: center;
+}
+.information-dl .videos p a{
+	color: #7E7E7E;
+}
+.information-dl .videos p a:hover{
+	color: #3F896E;
+	text-decoration: underline;
+}

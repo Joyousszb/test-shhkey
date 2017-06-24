@@ -1,0 +1,205 @@
+
+<!-- create By Lynn 2017-04-01-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>收货地址</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" href="css/vipCenter.css" />
+  		<script src="js/jquery-2.1.1.min.js"></script>
+  		<script class="resources library" src="js/area.js"></script>
+  		<script type="text/javascript" src="js/publicUrl.js" ></script>
+  		<script type="text/javascript" src="js/vipAddress.js" ></script>
+  <script type="text/javascript" src="js/top.js" ></script>
+  <script>
+  $(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+	
+</script>
+	</head>
+	      <!-- 导航栏 -->
+   <div id="top"></div>
+
+
+ <!-- 主页部分 -->
+<div id="main_banner" class="main_banner">
+  	<div class="container">
+	    	<div class="container-top">当前位置：<a href="index.html">首页</a>>会员中心><span>收货地址</span></div>
+	    	<div class="container-center">
+	    		<div class="container-left">
+		    		<ul class="container-left-top">
+		    			<li>会员中心</li>
+		    		</ul>
+		    		<ul class="container-left-bottom">
+		    			<li><a  href="vipCenter.html">会员介绍</a><span ><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipInfo.html">个人信息</a><span><img src="img/个人中心.png"></span></li>		    		
+		    			<li><a href="vipAddress.html" style="color: #167A58;">收货地址</a><span style="visibility: visible;"><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipOrder.html">我的订单</a><span><img src="img/个人中心.png"></span></li>      <!--<div style="clear: both;"></div>	-->		
+		    		</ul>
+		    	</div>
+		    	<div class="container-right">
+		    		<div class="tab" >
+			<div class="old-address"><!--已添加的地址-->
+			    <div class="default-address"><!--第一个地址-->
+			    				<div class="default-address-head">
+			    					<span style="margin-left: 38px;">杜拉拉</span>
+			    					<span >广东省</span>
+			    					<span >51000</span>
+			    					<span>
+			    						<button onclick="$('#editAddressModal').toggle();$('.bg-grey').show()">编辑</button>|
+			    						<button onclick="$('#cancerOrderModal').toggle();$('.bg-grey').show()">删除</button>
+			    					</span>
+			    				</div>
+			    				<div class="default-address-contain">
+			    					<table>
+			    						<tr>
+			    							<td>收货人：</td>
+			    							<td>杜拉拉</td>
+			    						</tr>
+			    						<tr>
+			    							<td>所在地区：</td>
+			    							<td><span>广东省</span>
+			    								<span>广州市</span>
+			    								<span>海珠区</span>
+			    							</td>
+			    						</tr>
+			    						<tr>
+			    							<td>地址：</td>
+			    							<td>钟落潭镇光新路388号</td>
+			    						</tr>
+			    						<tr>
+			    							<td>手机：</td>
+			    							<td>15566609090</td>
+			    						</tr>
+			    						<tr>
+			    							<td>固话：</td>
+			    							<td>0768-2626215</td>
+			    						</tr>
+			    					</table>
+			    				</div>
+			    				<button onclick="$(this).next().show()&&$(this).hide()" class="default-reset">设为默认地址</button>
+			    				<div class="default-address-footer" style="display: none;">
+			    					<img style="float: right;margin-top: -17px;" src="img/默认.png">
+			    				</div>
+			    			</div><!--第一个地址结束-->
+			   
+			</div><!--已添加的地址结束-->
+			<div class="new-address"><!--添加新的地址开始-->
+			    <button>新增收货地址</button>	
+			    <table class="new-address-table" border="0" cellspacing="0" cellpadding="0">
+			    			<tr><td><span>*</span>收货人：</td><td><input id="fullName" placeholder=""></td></tr>
+			    			<tr>
+			    				<td><span>*</span>所在地区：</td>
+			    				<td>
+			    					<div class="info">
+										<div>
+										<select class="city-select" id="s_province" name="s_province"></select>
+									    <select class="city-select" id="s_city" name="s_city" ></select>
+									    <select class="city-select" id="s_county" name="s_county"></select>									  										</div>
+									</div>
+			    				</td>
+			    			</tr>
+			    			<tr><td><span>*</span>详细地址：</td><td><input id="address" style="width: 323px;"placeholder="详细到门牌号"></td></tr>
+			    			<tr><td><span>*</span>手机号码：</td><td><input id="cellphone" placeholder="请输入手机号码"><span style="color: #E01E1F;margin-top: 11px;float: right;"></span></td></tr>
+			    			<tr><td>固定电话：</td><td><input id="telephone" placeholder="020-2332345"></td></tr>
+			    			<tr><td><span>*</span>邮政编码：</td><td><input id="zip" placeholder=""></td></tr>
+			    			<tr><td></td><td><button class="info-save" style="letter-spacing: 1px;">保存收货地址</button></td></tr>
+			    </table>
+			</div><!--添加新的地址结束-->
+		</div>
+			    	
+		    	</div>		    	
+	    	</div>	    	    	
+	    </div>
+</div>
+
+  
+ 
+	
+		
+	<!--遮罩层-->
+	<div class="bg-grey"></div>
+	<!--编辑旧地址-->
+	<div id="editAddressModal">	            
+        <div id="all">
+            <div id="header-div">                                  	
+                   <span onclick="$('#editAddressModal').toggle();$('.bg-grey').hide()"><img src="img/X.png"/></span>
+            </div>
+            <div id="content"> 
+            	<div style="font-size: 20px;">修改已有地址</div> 
+            </div>
+            <div>
+            	<table class="new-address-table" border="0" cellspacing="0" cellpadding="0">
+			    			<tr><td><span>*</span>收货人：</td><td><input placeholder="" class="fullname"></td></tr>
+			    			<tr>
+			    				<td><span>*</span>所在地区：</td>
+			    				<td>
+			    					<div class="info">
+										<div>
+										<select class="city-select" id="selProvince" name="province"></select>
+									    <select class="city-select" id="selCity" name="city" ></select>
+									    <select class="city-select" id="selCounty" name="county"></select>									  										</div>
+									</div>
+			    				</td>
+			    			</tr>
+			    			<tr><td><span>*</span>详细地址：</td><td><input class="address" style="width: 323px;"placeholder="详细到门牌号"></td></tr>
+			    			<tr><td><span>*</span>手机号码：</td><td><input class="cellphone" id="cellphone" placeholder="请输入手机号码"><span style="color: #E01E1F;margin-top: 11px;float: right;"></span></td></tr>
+			    			<tr><td>固定电话：</td><td><input class="telephone" id="telephone" placeholder="020-2332345"></td></tr>
+			    			<tr><td><span>*</span>邮政编码：</td><td><input placeholder="" class="zip"></td></tr>
+			    			
+			    </table>
+            </div>
+            <div id="footer-div">   
+            	 <button id="save-btn" style="margin-left: 131px;">保存并添加</button>
+            </div>
+        </div>
+	</div>
+	<!--删除地址模态框-->
+	<div id="cancerOrderModal">	            
+        <div id="all">
+            <div id="header-div">                                  	
+                   <span onclick="$('#cancerOrderModal').toggle();$('.bg-grey').hide()"><img src="img/X.png"/></span>
+            </div>
+            <div id="content"> 
+            	<div style="font-size: 20px;">操作提示</div>
+            	<div style="margin-top: 26px;height:90px;"><img src="img/叹号.png"></div>
+            	<div style="font-size: 16px;color: #666;">你确定要删除此订单吗？</div>
+            </div>
+            <div id="footer-div">   
+            	 <button id="sure-btn">确&nbsp;&nbsp;定</button>
+                <button id="cancer-btn" onclick="$('#cancerOrderModal').toggle();$('.bg-grey').hide()">取&nbsp;&nbsp;消</button>
+            </div>
+        </div>
+	</div>
+	 
+	 <div style="clear: both;"></div>
+	 	
+	 <!-- footer -->
+   <div id="foot"></div>
+	</body>
+
+<script type="text/javascript">
+		_init_area();
+		var Gid  = document.getElementById ;
+		var showArea = function(){
+			Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" + 	
+			Gid('s_city').value + " - 县/区" + 
+			Gid('s_county').value + "</h3>"
+		}
+		Gid('s_county').setAttribute('onchange','showArea()');
+</script>
+<script type="text/javascript">
+		initarea();
+		var Gid  = document.getElementsByClassName;
+		var show = function(){
+			Gid('show').innerHTML = "<h3>省" + Gid('selProvince').value + " - 市" + 	
+			Gid('selCity').value + " - 县/区" + 
+			Gid('selCounty').value + "</h3>"
+		}
+		Gid('selCounty').setAttribute('onchange','show()');
+		
+</script>
+</html>

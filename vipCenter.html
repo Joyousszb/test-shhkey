@@ -1,0 +1,73 @@
+
+<!-- create By Lynn 2017-04-01-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员中心</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" href="css/vipCenter.css" />
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/top.js" ></script>
+  <script>
+  $(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+
+ //iframe自适应子页面高度
+/*	$(function(){
+		
+		    var mainheight = $("html").height() + 15;
+		    var footerHeiht=mainheight+300;
+		    $(this).height(mainheight);
+		    //让页脚一直在最低端
+		    $(".footer").css('position','absolute');
+			$(".footer").css('top',footerHeiht);
+		
+	})*/
+  </script>
+</head>
+<body >
+      <!-- 导航栏 -->
+   <div id="top"></div>
+
+
+ <!-- 主页部分 -->
+<div id="main_banner" class="main_banner">
+  	<div class="container">
+	    	<div class="container-top">当前位置：<a href="index.html">首页</a>>会员中心><span>会员介绍</span></div>
+	    	<div class="container-center">
+	    		<div class="container-left">
+		    		<ul class="container-left-top">
+		    			<li>会员中心</li>
+		    		</ul>
+		    		<ul class="container-left-bottom">
+		    			<li><a style="color: #167A58;" href="vipCenter.html">会员介绍</a><span style="visibility: visible;"><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipInfo.html" >个人信息</a><span><img src="img/个人中心.png"></span></li>		    		
+		    			<li><a href="vipAddress.html" >收获地址</a><span><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipOrder.html" >我的订单</a><span><img src="img/个人中心.png"></span></li>     
+		    		</ul>
+		    	</div>
+		    	<div class="container-right">
+		    		
+			    	<div class="tab" > 
+		    		<div style="padding: 38px 32px;">
+		    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.<br />
+
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.<br>
+
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+						</div>
+		    	</div>		    	
+	    	</div>	    	    	
+	    </div>
+</div>
+<div style="clear: both;"></div>
+  
+   <!-- footer -->
+<div id="foot"></div>
+	
+</body>
+</html>

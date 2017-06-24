@@ -1,0 +1,109 @@
+html { min-width: 1280px; }
+/*地区时间选择头部*/
+.container{
+	width: 1150px;
+	height: auto;
+	    margin: 0 auto 15px auto;
+	font-size: 14px;
+}
+.container>.current_position{
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+	color: rgb(103,103,103);
+}
+.container>.current_position>a,.container>.current_position>a:hover{
+	color: rgb(103,103,103);
+}
+/**information_nav部分**/
+.container>.information_nav{
+	width: 100%;
+	height: auto;
+	background: white;
+}
+.container>.information_nav>.select_location{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px dashed rgb(229,229,229);
+}
+.container>.information_nav>.select_location>dl,.container>.information_nav>.select_weather>dl{
+    width: 100%;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+}
+.container>.information_nav>.select_location>dl>dt{
+	width: 10%;
+    text-align: center;
+    color: rgb(187,187,187);
+    float: left;
+    margin-top: 15px;
+}
+.container>.information_nav>.select_location>dl>dd{
+	width: 90%;
+	float: left;
+	color: rgb(83,83,83);
+}
+.container>.information_nav>.select_location>dl>dd>ul{
+	width: 100%;
+}
+.container>.information_nav>.select_location>dl>dd>ul>li{
+	width: 61px;
+	text-align: center;
+	float: left;
+	margin: 15px 0;
+}
+.container>.information_nav>.select_time{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.container>.information_nav>.select_time>dl{
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	clear: both;
+}
+.container>.information_nav>.select_time>dl>dt{
+	width: 10%;
+    text-align: center;
+    color: rgb(187,187,187);
+    float: left;
+}
+.container>.information_nav>.select_time>dl>dd{
+	width: 90%;
+}
+.container>.information_nav>.select_time>dl>dd>input{
+	height: 30px;
+	text-indent: 8px;
+	border: 1px solid rgb(229,229,229);
+	color: rgb(83,83,83);
+	margin-left: 15px;
+}
+.container>.information_nav>.select_time>dl>dd>span{
+	margin-left: 15px;
+}
+/*地区时间选择头部结束*/
+.emerInfo_path { height:55px;line-height: 55px;font-size: 14px;}
+.emerInfo_content { background-color: #fff; margin-bottom: 30px; height: 680px; }
+/*应急信息-天气模块*/
+.emerInfo_weather { background: url(../img/emerInfo/天气BG.png) 100%; width: 385px; height: 680px; float: left; display: inline-block;}
+.emerInfo_weather img { vertical-align: middle; position: relative; left: 20px;}
+.box250c {border: none !important;width: 384px !important;}
+/*应急信息-信息模块*/
+
+
+/*新闻内容模块*/
+.emerInfo_news_list { width: 765px; height: 680px; float: left; display: inline-block; }
+.news_list_body { padding: 6px 25px;}
+.news_list_content li { line-height: 72px; font-size: 14px; border-bottom: 1px solid #e5e5e5;padding-left: 18px;color: #666;}
+.news_list_content li span { float: right;}
+
+/*翻页模块*/
+.news_list_page { height: 43px; width: 360px; margin: 0 auto;}
+.news_list_page_nav { margin-top: 25px;}
+.news_list_page_nav li {margin-right: 15px; float: left; width: 30px; height: 30px; text-align: center; line-height: 30px; font-size: 14px;color: #9c9c9c;}
+.news_list_page_nav li:hover{color: #fff;background-color: #167A58;cursor: pointer;}
+.prev_page:hover,.next_page:hover{background-color: #f9f9f9 !important;cursor: pointer;border-radius: 2px;border-color: 1px solid #e5e5e5 !important;}
+.currentPage{color: #FFFFFF !important;background-color: #167A58;}
+

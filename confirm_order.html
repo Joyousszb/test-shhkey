@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>确认订单</title>
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/confirm_order.css">
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/top.js"></script>
+  <script type="text/javascript" src="js/confirm_order.js"></script>
+  <script class="resources library" src="js/area.js" type="text/javascript"></script>
+</head>
+<body>
+     <!-- 导航栏 -->
+   <div class="header">
+      <div class="user_nav">
+         <div class="w">
+           <span>欢迎来到农博士</span>
+           <ul>
+              <li><a href="login.html">登录</a></li>
+              <li>|</li>
+              <li><a href="register.html">注册</a></li>
+              <li>|</li>
+              <li><a href="vipCenter.html">我的订单</a></li>
+           </ul>
+         </div>
+      </div>
+      <div class="logo_line">
+         <div class="w">
+            <div class="mid_logo">
+                <a href="javascript:;" class="logo">农博士</a>
+                <p><i>|</i> 引领“<em><b>绿色、健康、休闲</b></em> ”食品潮流</p>
+            </div>
+            <div class="mid_search">
+                <input type="text" placeholder ="">
+                <button>搜索</button>
+            </div>
+            <div class="mid_shoppingcar">
+                <a href="car.html"><i><img src="img/购物车-2.png" alt=""></i><p>购物车(2)</p></a>
+            </div>
+
+         </div>
+      </div>
+      <div class="nav-wrap">
+         <div class="w">
+          <!--导航条-->
+             <ul class="clearfix">
+             	<li><a href="index.html"><i class="home_ico"></i>首页</a></li>
+             	<li> <a href="information_center.html">资讯中心</a></li>
+             	<li><a href="mall.html">产品商城</a></li>
+             	<li><a href="emerInfo.html">应急信息</a></li>
+             	<li><a href="education_services.html">教育服务</a></li>
+             	<li><a href="vipCenter.html">会员中心</a></li>
+             	<li class="nav-last"><a href="about_us_platform.html">关于我们</a></li>
+             </ul>
+          <!--隐藏下拉菜单-->
+             <div id="box-1" class="hidden-box hidden-loc-zxzx">
+                  <ul>
+                      <li><a href="info_company_news.html">公司新闻</a></li>
+                      <li><a href="info_industry_trends.html">行业动态</a></li>
+                      <li><a href="info_policy_notice.html">政策公告</a></li>
+                      <li><a href="info_grow_technology">种植技术</a></li>
+                  </ul>
+             </div>
+             <div id="box-3" class="hidden-box hidden-loc-yjxx">
+                  <ul>
+                      <li><a href="emerInfo.html">气象警报信息</a></li>
+                      <li><a href="emergency_information.html">病虫信息</a></li>
+                  </ul>
+             </div>
+             <div id="box-4" class="hidden-box hidden-loc-jyfw">
+                  <ul>
+                      <li><a href="education_services.html">图文文章</a></li>
+                      <li><a href="min_videos.html">微视频</a></li>
+                  </ul>
+             </div>
+             <div id="box-5" class="hidden-box hidden-loc-hyzx">
+                  <ul>
+                      <li><a href="vipCenter.html">会员介绍</a></li>
+                      <li><a href="vipCenter.html">个人信息</a></li>
+                      <li><a href="vipCenter.html">收货地址</a></li>
+                      <li><a href="vipCenter.html">我的订单</a></li>
+                  </ul>
+             </div>
+             <div id="box-6" class="hidden-box hidden-loc-gywm">
+                  <ul>
+                      <li><a href="about_us_platform.html">平台介绍</a></li>
+                      <li><a href="connect_us.html">联系我们</a></li>
+                  </ul>
+             </div>            
+         </div>
+      </div>
+   </div>
+
+  <!-- -----------遮罩层----------- -->
+  <div id="mask_layer"></div>
+
+  <!--主要内容-->
+  <h1 class="headline"><span></span>产品清单</h1>
+  <div id="goods" class="bigbox">
+    <dl>
+      <dt>
+        <span>商品</span>
+        <span>单价(元)</span>
+        <span>数量</span>
+        <span>小计(元)</span>
+      </dt>
+      <dd>
+
+      </dd>
+    </dl>
+  </div>
+<!---------------------配送地址---------------------->
+  <h1 class="headline"><span></span>配送地址</h1>
+  <div id="address" class="bigbox">
+    <div id="address_box">
+      <p>
+          &nbsp;<input type="radio" name="chioce_address" value=""/>
+          &nbsp;&nbsp;&nbsp;方小姐&nbsp;广东省&nbsp;广州市&nbsp;越秀区&nbsp;黄石东路&nbsp;510000&nbsp;18826274144
+          <span><a href="javascript:void(0)">删除</a></span>
+          <span>修改&nbsp;&nbsp;</span>
+      </p>
+    </div>
+    <div id="add_address">
+      +&nbsp;添加新地址 
+    </div>
+    <!-- ----------------遮罩层------------------ -->
+
+    <div id="add_new_address">
+        <h2>添加新地址<span>×</span></h2>
+        <form method="get">
+          <p><span>&nbsp;&nbsp;&nbsp;&nbsp;*</span>收货人：<input id="consignee" type="text" value="" style="width: 162px" /></p>
+          <p>
+            <span>&nbsp;*</span>所在地区：
+          </p>
+            <!-- 三级联动 -->
+            <div class="info" style="position: absolute;top: 100px;left: 125px;">
+              <div>
+                <select id="s_province" name="s_province" class="chioce_district"></select>&nbsp;&nbsp;
+                <select id="s_city" name="s_city" class="chioce_district"></select>&nbsp;&nbsp;
+                <select id="s_county" name="s_county" class="chioce_district"></select>
+                
+    
+                <script type="text/javascript">_init_area();</script>
+              </div>
+              <div id="show"></div>
+            </div>
+            <script type="text/javascript">
+              var Gid  = document.getElementById ;
+              var showArea = function(){
+              Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +  
+              Gid('s_city').value + " - 县/区" + 
+              Gid('s_county').value + "</h3>"
+              }
+              //Gid('s_county').setAttribute('onchange','showArea()');
+            </script>
+          
+          <p><span>*</span>详细地址 ：<input type="text" value=""/></p>
+          <p><span>*</span>手机号码 ：<input type="text" value=""/></p>
+          <p>&nbsp;&nbsp;固定电话：<input type="text" value=""/></p>
+          <p><span>*</span>邮政编码 ：<input type="text" value=""/></p>
+          <input type="button" value="保存并送到这地址" id="new_address_submit"/>        
+        </form>
+    </div>
+  </div>
+
+
+<!-- -------------------配送方式------------------- -->
+<div id="box-middle" class="bigbox">
+    <div>
+        <h1 class="headline headline1"><span></span>配送方式</h1>
+        <div class="bigbox3">
+            &nbsp;<input type="radio" name="" value="" checked="true"/><p>顺丰速运  </p>           
+            <span class="alter">修改</span>
+        </div>
+        <div id="choice_express">
+            <h2>选择配送方式<span>X</span></h2>
+            <ul>
+              <li><input type="radio" name="choice1" checked="true" value="顺丰速运(￥0.00)"/>&nbsp;&nbsp;顺丰速运(￥0.00)</li>
+              <li><input type="radio" name="choice1" value="中通快递(￥0.00)"/>&nbsp;&nbsp;中通快递(￥0.00)</li>
+              <li><input type="radio" name="choice1" value="圆通快递(￥0.00)"/>&nbsp;&nbsp;圆通快递(￥0.00)</li>
+            </ul>
+            <input type="submit" value="确&nbsp;&nbsp;&nbsp;定">
+        </div>
+    </div>
+    <div>
+        <h1 class="headline headline1"><span></span>送货时间</h1>
+        <div class="bigbox3">
+            &nbsp;<input type="radio" name="" value="" checked="true"/>
+            <p>工作日、双休日与节假日均可送货</p>
+             <span class="alter">修改</span>
+        </div>
+        <!-- 遮罩层 -->
+        <div id="choice_time">
+            <h2>选择配送时间<span>X</span></h2>
+            <ul>
+              <li><input type="radio" name="choice" checked="true" value="工作日、双休日与节假日均可送货"/>&nbsp;&nbsp;工作日、双休日与节假日均可送货</li>
+              <li><input type="radio" name="choice" value="只有双休日与节假日送货"/>&nbsp;&nbsp;只有双休日与节假日送货</li>
+              <li><input type="radio" name="choice" value="只有工作日送货"/>&nbsp;&nbsp;只有工作日送货</li>
+            </ul>
+            <input type="submit" value="确&nbsp;&nbsp;&nbsp;定">
+        </div>
+    </div>
+    <div>
+        <h1 class="headline headline1"><span></span>支付方式</h1>
+        <div class="bigbox3">
+            &nbsp;<input type="radio" name="" value="" checked="true"/>
+            <p>支付宝</p>
+             <span class="alter">修改</span>
+        </div>
+    </div>
+    
+</div>
+
+<!-- -------------------附加说明------------------- -->  
+<h1 class="headline"><span></span>附加说明</h1>
+<div id="bigbox4" class="bigbox">
+    <textarea name="" placeholder="请输入您的附加说明"></textarea>
+</div>
+
+<!-- -------------------------------------------- -->
+<div id="box_bottom">
+  <p>
+    <span class="red">￥429</span>
+    <span class="balck">产品金额总价：</span>
+    <span class="red">6件</span>
+    <span class="balck">产品数量总计：</span>
+  </p>
+  <p>
+    <span class="red">￥10</span>
+    <span class="balck">运费：</span>
+  </p>
+   <p>
+    <span id="red">439元</span>
+    <span class="balck">总金额：</span>
+  </p>
+  <p class="indent">
+    <span><input id="submit" type="submit" value="提交订单"></span>
+    <span>返回购物车修改</span>
+  </p>
+  <p class="indent">
+    <span><a href="#">《农博士服务条款》</a></span>
+    <span ><input type="checkbox" checked="true"/>同意</span>
+  </p>
+</div>
+
+  
+  <!-- footer -->
+   <div class="clearfix footer">
+      <div class="w">
+          <div class="footer_logo">
+             <a href="javascript:;"><img src="img/logo1.png" alt=""></a>
+             <p>引领 “<em><b>绿色、 健康、 休闲</b></em> ” 食品潮流</p>
+          </div> 
+          <div class="footer_nav">
+            <div class="footer_nav_list">
+              <div class="footer_menu">
+               <ul>
+                  <li><a href="index.html">首页</a></li>
+                  <li><a href="information_center.html">资讯中心</a></li>
+                  <li><a href="mall.html">产品商城</a></li>
+                  <li><a href="emerInfo.html">应急信息</a></li>
+                  <li><a href="education_services.html">教育服务</a></li>
+                  <li><a href="vipCenter.html">会员中心</a></li>
+                  <li><a href="connect_us.html">关于我们</a></li>
+                </ul>
+              </div>
+              <p>广州农博士责任有限公司&nbsp;&nbsp;&nbsp;技术支持：广州酷云科技有限公司&nbsp;&nbsp;&nbsp;联系电话:020-123456&nbsp;&nbsp;&nbsp;邮箱：12345678@163.com</p>
+            </div>
+          </div>
+      </div>
+
+   </div>
+</body>
+</html>

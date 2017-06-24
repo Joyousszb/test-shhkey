@@ -1,0 +1,56 @@
+#pay_success{
+	width: 1137px;
+	height: 200px;
+	background-color: #ffffff;
+	border: 1px solid #E2EBDD;
+	margin: 20px auto;
+}
+#pay_success p{
+	width: 100%%;
+	text-align: center;
+}
+#pay_success p:first-child{
+	height: 100px;
+	margin-top: 20px;
+}
+#pay_success p:nth-child(1){
+	font-size: 14px;
+};
+/*------------精选商品-----------*/
+#goods{
+	width: 1137px;	
+	margin: 20px auto;
+}
+#goods>h2{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	color: #22775A;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+}
+#goods>h2>img{
+	position: absolute;
+	top: 0;
+	left: 00px;
+}
+.good_goods{
+	width: 270px;
+	float: left;
+	margin-right: 16px;
+	margin-top: 25px;
+	border: 1px solid #E2EBDD;
+	background-color: #ffffff;
+}
+.good_goods:last-child{
+	margin-right:0;
+}
+.good_goods p{
+	text-align: center;
+	font-size: 16px;
+}
+.good_goods p>a:hover{
+	color: #3F896E;
+	text-decoration: underline;
+}

@@ -1,0 +1,306 @@
+/* create By Lynn 2017-04-01*/
+*{font-size: 14px;}
+
+.container{
+	width: 1150px;
+	/*position: absolute;*/
+	margin-left: 121px;
+		margin-bottom: 63px;
+}
+.tab{padding: 20px 0;}
+.container-top{
+	height: 64px;
+	line-height: 64px;
+}
+/*左边选项卡*/
+.container-left{
+	/*position: absolute;*/
+	width: 170px;
+	background-color: #fff;
+	float: left;
+}
+.container-left ul li{
+	font-size: 16px;
+	text-align: center;
+	line-height: 56px;
+}
+.container-left-top{
+	color: #FFFFFF;
+	background-color: #167a58;
+}
+.container-left-bottom a:hover{color: #167A58;}
+.container-left-bottom span{visibility: hidden;position: absolute;left: 260px;line-height: 57px;}
+.container-left-bottom li:hover{background-color: #ECECEC;}
+/*左边选项卡*/
+/*右边切换内容*/
+.container-right{
+	
+	/*position: absolute;*/
+	margin-left: 186px;
+	width: 976px;
+	background-color: #fff;
+}
+.container-right div{
+	/*display: none;*/
+}
+/*右边切换内容*/
+/*个人信息*/
+.tip{
+	margin:0 auto 8px 160px;
+}
+.right2-table{
+	font-size: 14px;
+	color: #343434;
+}
+.right2-table tr td:nth-child(1){
+	text-align: right;
+	width: 150px;
+	height: 50px;
+}
+.right2-table tr td:nth-child(2) input,.sex-select{
+	width: 180px;
+	height: 40px;
+	border:1px solid #e5e5e5;
+	padding-left: 20px;
+	font-size: 14px;
+	margin:auto 14px;
+}
+.sex-select{
+	width: 103px;
+}
+.info-save,#save-btn{
+	height: 47px;
+	width: 232px;
+	color: #FFFFFF;
+	font-family: "Microsoft YaHei", "Microsoft JhengHei", STHeiti, MingLiu;
+	background-color: #FF8A00;
+	letter-spacing: 5px;
+	text-align: center;
+	font-weight: bold;
+	border: none;
+	margin-top: 60px;
+	font-size: 16px;
+}
+/*个人信息*/
+/*收货地址*/
+     /*已有地址*/
+.old-address{margin-top: 50px;margin-left: 37px;margin-bottom: 30px;}
+.default-address{
+	float: left;
+	width: 430px;
+	height: 240px;
+	font-size: 14px;
+	background-color: #f8f8f8;
+	border:1px solid #e6e6e6;
+	margin-right: 37px;	
+	margin-bottom: 20px;
+}
+.default-address-head{height: 50px;line-height: 50px;}
+.default-address-head span{
+	color: #167A58;
+    margin-right: 10px;
+    font-size: 16px;
+ }
+.default-address-head span:nth-child(4){float:right;}
+.default-address-head button{
+	border: none;
+	color: #989898;
+	font-family: "Microsoft YaHei", "Microsoft JhengHei", STHeiti, MingLiu;
+	font-size: 15px;
+    background-color: #f8f8f8;
+    width: 65px;
+}
+.default-address-contain tr td:nth-child(1){
+	text-align: right;
+	width: 97px;
+	height: 33px;
+}
+.default-reset{
+	color: #FFFFFF;
+	width: 100px;
+	height: 35px;
+	font-family: "Microsoft YaHei", "Microsoft JhengHei", STHeiti, MingLiu;
+	background-color: #167A58;
+	float: right;
+	font-size: 14px;
+	margin-right: 20px;
+	margin-top: -30px;
+}
+#editAddressModal{
+		position:fixed;
+		top: 70px;
+		width:565px;
+		height:521px;
+		z-index:999;
+		display:none;
+		background-color: white;
+		border:5px solid #e5e5e5;
+		padding: 10px;
+		left: 380px;
+}
+	/*新增地址*/
+.new-address>button{
+	width: 963px;
+	height: 36px;
+	border: none;
+	text-align: left;
+	padding-left: 28px;
+	background-color: #EFF6FF;
+	border-radius: 6px;
+	color: #167A58;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei", "Microsoft JhengHei", STHeiti, MingLiu;
+}
+.new-address-table{
+	font-size: 14px;
+	color: #343434;
+	margin: 38px 0;	
+}
+.new-address-table tr td:nth-child(1){
+	text-align: right;
+	width: 150px;
+	height: 50px;
+}
+.new-address-table tr td:nth-child(1) span{color: #E01E1F}
+.new-address-table tr td:nth-child(2) input,.city-select{
+	width: 200px;
+	height: 40px;
+	border:1px solid #e5e5e5;
+	padding-left: 15px;
+	font-size: 14px;
+	margin-left: 14px;
+}
+.city-select{width: auto;}
+/*收货地址*/
+/*我的订单*/
+
+.order{margin: 19px 17px;width: 928px;}
+.order-tab{height: 38px;}
+.btn li{
+  	width: 102px;
+	text-align: center;
+	float: left;
+	margin-right: 12px;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	line-height: 36px;
+	height: 36px;
+	font-size: 14px;   
+	cursor: pointer;           		   
+}
+.order-content{
+	margin-top: 25px;
+}
+.main0-table-header,.main0-table-content{
+	font-size: 14px;
+	width: 100%;
+	margin-bottom: 11px;
+	text-align: center;
+}
+.main0-table-content>tbody tr{
+	height: 120px;
+	border-bottom:  1px solid #e5e5e5;
+}
+.main0-table-content>tbody td{
+	border-right:  1px solid #e5e5e5;
+}
+.main0-table-content tr td:nth-child(2){
+	border-left:hidden;
+	width: 107px;
+	padding-right: 10px;
+}
+.main0-table-header tr,.main0-table-content>thead tr{
+	border: 1px solid #e5e5e5;
+	background-color: #F8F8F8;
+	color: #c1c1c1;
+	height: 44px;
+}
+.main0-table-content{border: 1px solid #e5e5e5;}
+.main0-table-content>thead tr td:nth-child(3),.main0-table-content>tbody tr td:nth-child(3){
+	text-align: left;
+	width: 216px;
+	border-left: hidden;
+}
+.check-btn,.cancel-btn,.checkLogistics-btn{
+	width: 95px;
+	height: 36px;
+	border: 1px solid #167A58;
+	background-color: #FFFFFF;
+	color: #167A58;	
+}
+.cancel-btn{color: #979797;border: none;}
+.bg-grey{
+	background-color: #000000;
+	opacity: .5;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	display: none;
+}
+#cancerOrderModal{
+		position:fixed;
+		top: 180px;
+		width:400px;
+		height:380px;
+		z-index:999;
+		display:none;
+		background-color: white;
+		border:1px solid #e5e5e5;
+		padding: 10px;
+		left: 480px;
+		
+	}
+#header-div{height: 40px;}
+#header-div span{float: right;margin-right: 15px;margin-top: 5px;}
+#content{text-align: center;margin-top: 5px;}
+#footer-div{
+	text-align: center;
+	position: absolute;
+	bottom: 36px;
+}
+#sure-btn,#cancer-btn{
+	font-family: "Microsoft YaHei", "Microsoft JhengHei", STHeiti, MingLiu;
+	background-color: #167A58;
+	margin-top: 12px;
+	color: #fff;
+	font-size: 16px;
+	width: 300px;
+	padding-left: 0;
+	border: 2px solid #167A58;
+	height: 40px;
+	border-radius: 2px;
+}
+#sure-btn{
+	background-color: #FFFFFF;
+	color: #167A58;
+}
+	/*查看物流*/
+.checkLogistics-btn{border: none;}
+.logistics-info{margin: 25px 29px;}
+.track-list{margin: 20px; padding-left: 5px; position: relative;}
+.track-list li{position: relative; padding: 9px 0 0 25px; line-height: 18px; border-left: 2px solid #e5e5e5;}
+
+.track-list li.first{padding-top: 0; border-left-color: #fff;}
+.track-list li .node-icon{position: absolute; left: -5px; top: 67%; width: 8px;z-index: 10; height: 8px;background:url("../img/椭圆 1.png") left 8px repeat-y}
+.track-list li:last-child .node-icon{top: 20px;}
+.track-list li.first .node-icon{background-position:0 -72px;}
+.track-list li span{min-width: 50px; position: relative; top: 4px; display: inline-block; vertical-align: middle;}
+.track-list li .date{min-width: 79px;margin-right: 20px; position: relative; top: 4px; display: inline-block; vertical-align: middle;}
+.track-list li .time{width: 70px;}
+.track-list li.first .date{margin-right: 20px; }
+.track-list li.first .text{max-width: 600px; }
+/*.track-list li:last-child{border-left: 2px solid #fff;}*/
+.logistics-info-bottom{height: 115px;}
+.logistics-info-bottom div{height: 44px;float: left;}
+.logistics-info-bottom #orderNumber{width: 320px;}
+.logistics-info-bottom #logisCompany{width: 306px;}
+.logistics-info-bottom #shipAddress,#takeAddress{width: 400px;}
+.logistics-info-bottom #shipPostcode,#takePostcode{width: 100px;}
+.logistics-info-bottom #shipper,#taker{width: 60px;}
+
+	/*查看物流*/
+/*我的订单*/

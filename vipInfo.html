@@ -1,0 +1,109 @@
+
+<!-- create By Lynn 2017-04-01-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+			<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" href="css/vipCenter.css" />
+  <script src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/publicUrl.js" ></script>
+	<script type="text/javascript" src="js/vipInfo.js" ></script>
+	<script type="text/javascript" src="js/top.js" ></script>
+  <script>
+  $(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+
+</script>
+	</head>
+	  <!-- 导航栏 -->
+   <div id="top"></div>
+
+
+ <!-- 主页部分 -->
+<div id="main_banner" class="main_banner">
+  	<div class="container">
+	    	<div class="container-top">当前位置：<a href="index.html">首页</a>>会员中心><span>会员信息</span></div>
+	    	<div class="container-center">
+	    		<div class="container-left">
+		    		<ul class="container-left-top">
+		    			<li>会员中心</li>
+		    		</ul>
+		    		<ul class="container-left-bottom">
+		    			<li><a  href="vipCenter.html">会员介绍</a><span ><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipInfo.html" style="color: #167A58;">个人信息</a><span style="visibility: visible;"><img src="img/个人中心.png"></span></li>		    		
+		    			<li><a href="vipAddress.html" >收获地址</a><span><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipOrder.html" >我的订单</a><span><img src="img/个人中心.png"></span></li>     
+		    		</ul>
+		    	</div>
+		    	<div class="container-right">
+		<div class="tab">	
+					<div class="tip">
+						<span style="color: #E01E1F;">*</span>
+						<span>双击输入框进行编辑状态</span>
+					</div>
+			 		<table class="right2-table" border="0" cellspacing="0" cellpadding="0">
+			    			<!--<tr>
+			    				<td>昵称：</td>
+			    				<td>
+			    					<input id="inputName" placeholder="昵称" readonly="true ">
+			    				</td>
+			    			</tr>-->
+			    			<tr>
+			    				<td>性别：</td>
+			    				<td><select class="sex-select" id="selSex">
+			    						<option value="男">男</option>
+			    						<option value="女">女</option>
+			    					</select>
+			    				</td>
+			    			</tr>
+			    			<tr>
+			    				<td>用户名：</td>
+			    				<td>
+			    					<input id="inputUser" placeholder="请输入用户名"readonly="true ">
+			    					<span style="color: #E01E1F;"></span>
+			    				</td>
+			    			</tr>
+			    			<tr>
+			    				<td>绑定手机号码：</td>
+			    				<td>
+			    					<input id="inputPhone" placeholder="请输入手机号码"readonly="true ">
+			    					<span style="color: #E01E1F;"></span>
+			    				</td>
+			    			</tr>
+			    			<tr>
+			    				<td>邮箱：</td>
+			    				<td>
+			    					<input id="inputMail" placeholder="请输入邮箱"readonly="true ">
+			    					<span style="color: #E01E1F;"></span>
+			    				</td>
+			    			</tr>
+			    			<!--<tr>
+			    				<td>出生日期：</td>
+			    				<td>
+			    				<input id="inputBirthday" placeholder="例如:1988-05-20"readonly="true ">
+			    				<span style="color: #E01E1F;"></span>
+			    			</td>
+			    				
+			    			</tr>-->
+			    			<tr>
+			    				<td></td>
+			    				<td>
+			    					<button class="info-save">保存</button>
+			    				</td>
+			    			</tr>
+			    	</table>
+			   		
+		</div>
+		</div>	    	    	
+	    </div>
+</div>
+
+  <div style="clear: both;"></div>
+   <!-- footer -->
+   <div id="foot"></div>
+	</body>
+</html>

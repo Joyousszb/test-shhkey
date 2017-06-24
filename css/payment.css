@@ -1,0 +1,51 @@
+.footer{
+	position: absolute;
+	bottom: -80px;
+	left: 0;
+}
+
+#payment{
+	width: 1137px;
+	height: 235px;
+	background-color: #ffffff;
+	border: 1px solid #E2EBDD;
+	margin: 30px auto;
+}
+#payment h2{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	text-indent: 65px;
+	border-bottom: 1px solid #E2EBDD;
+	background-color: #E3FFD9;
+	margin-bottom: 15px;
+	position: relative;
+}
+#payment h2>img{
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+#payment p{
+	height: 20px;
+	width: 100%;
+	text-indent: 50px;
+	line-height: 20px;
+}
+#payment .money{
+	color: red;
+}
+#payment input{
+	float: right;
+	margin-right:15px;
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #FF8A00;
+	color: #ffffff;
+	border:none; 
+}
+.footer{
+	position: relative;
+}	

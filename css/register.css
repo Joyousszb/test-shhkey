@@ -1,0 +1,98 @@
+* {
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+body {
+	min-width: 1280px;
+}
+/*-------注册页面  开始-------*/
+
+.middle_register {
+	width: 1150px;
+	height: 647px;
+	margin:22px auto 90px;
+	background: #fff;
+}
+.register_title {
+	height: 66px;
+	border-bottom: 2px dashed #E5E5E5;
+}
+.register_title h5 {
+	float: left;
+	font-size: 18px;
+	font-weight: normal;
+	color: #167A58;
+	line-height: 66px;
+	margin-left: 535px;
+}
+.register_title span {
+	float: right;
+	font-size: 14px;
+	color: #AAAAAA;
+	margin-right: 32px;
+	line-height: 66px;
+}
+
+.register_table{
+	font-size: 14px;
+	color: #B7B7B7;
+	margin: 38px 0 0 350px;	
+}
+
+.register_table tr td:nth-child(1){
+	text-align: right;
+	width: 100px;
+	height: 56px;
+}
+.register_table tr td:nth-child(2) input {
+	width: 280px;
+	height: 40px;
+	border:1px solid #e5e5e5;
+	border-radius: 3px;
+	padding-left: 15px;
+	font-size: 14px;
+	margin-left: 14px;
+}
+.register_table tr td:nth-child(2) span {
+	margin-left: 10px;
+	color: #E01E1F
+}
+.register_table .tel_label {
+	width: 160px!important;
+}
+.register_table tr td:nth-child(2) p {
+	display: inline-block;
+	width: 111px;
+	height: 42px;
+	background: #e5e5e5;
+	margin-left: 7px;
+	line-height: 42px;
+	color: #9c9c9c;
+	text-align: center;
+	cursor:pointer;
+	font-size: 14px;
+	border-radius: 3px;	
+}
+
+.register_table .tel_code1 {
+	background:#E6E6E6!important;
+	color:#818080!important;
+	border:1px solid #CCCCCC!important;
+}
+
+.register_table .register_btn {
+	width: 232px;
+	height: 46px;
+	color: #fff;
+	font-size: 18px;
+	background: #FF8A00;
+	margin-top:40px;
+}
+
+
+/*-------注册页面  结束-------*/

@@ -1,0 +1,110 @@
+
+<!-- create By Lynn 2017-04-01-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>应急中心</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/emergency_information.css">	
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/plugin/laydate/laydate.js"></script>
+    <script type="text/javascript" src="js/publicUrl.js" ></script>
+    <script src="js/emergency_information.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+	</script>
+</head>
+<body>
+   <!-- 导航栏 -->
+  <div id="top"></div>
+     
+   <!--container开始-->
+   <div class="container">
+       <div class="current_position">
+           当前位置：<a href="index.html">首页</a> > 应急信息<a href="#"> > 病虫信息</a>
+        </div>
+        <div class="information_nav">
+            <!--select_location开始-->
+            <div class="select_location">
+                <dl>
+                    <dt>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方&nbsp;:</dt>
+                    <dd>
+                        <ul>
+                            <li>北京</li>
+                            <li>北京er</li>
+                            <li>北re京</li>
+                            <li>北京</li>
+                            <li>北r京</li>
+                            <li>北re京</li>
+                            <li>北京</li>
+                            <li>北w京</li>
+                            <li>北rw京</li>
+                            <li>北rw京</li>
+                            <li>北w京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <!--select_location结束-->
+            <!--select_time开始-->
+            <div class="select_time">
+                <dl>
+                    <dt>时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间&nbsp;:</dt>
+                    <dd>
+                        <input type="text" value="2017-02-01" style="background: url(img/日历.png) 107px 5px no-repeat;" onclick="laydate()">
+                        <span>-</span>
+                        <input type="text" value="2017-02-02" style="background: url(img/日历.png) 107px 5px no-repeat;" onclick="laydate()">
+                    </dd>
+                </dl>
+            </div>
+            <!--select_time结束-->
+            <!--select_weather开始-->
+            <div class="select_weather">
+                <dl>
+                    <dt>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方&nbsp;:</dt>
+                    <dd>
+                        <ul>
+                            <li class="day_weather" style="background: url(img/晴.png) 135px 16px no-repeat;">今天&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;晴 &nbsp;&nbsp;18℃/24℃</li>
+                            <li class="day_weather" style="background: url(img/晴.png) 135px 16px no-repeat;">今天&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;晴 &nbsp;&nbsp;18℃/24℃</li>
+                            <li class="day_weather" style="background: url(img/晴.png) 135px 16px no-repeat;">今天&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;晴 &nbsp;&nbsp;18℃/24℃</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <!--select_weather结束-->
+        </div>
+        <!--article_tittle开始-->
+        <div class="article_tittle">
+            <ul>
+                <li>华北黄淮明日告别重污染 南方升温不断<span>2017-02-01&nbsp;&nbsp;08:47:30</span></li>
+                <li>华北黄淮明日告别重污染 南方升温不断<span>2017-02-01&nbsp;&nbsp;08:47:30</span></li>
+                <li>华北黄淮明日告别重污染 南方升温不断<span>2017-02-01&nbsp;&nbsp;08:47:30</span></li>
+                <li>华北黄淮明日告别重污染 南方升温不断<span>2017-02-01&nbsp;&nbsp;08:47:30</span></li>
+                <li>华北黄淮明日告别重污染 南方升温不断<span>2017-02-01&nbsp;&nbsp;08:47:30</span></li>
+                <li>华北黄淮明日告别重污染 南方升温不断<span>2017-02-01&nbsp;&nbsp;08:47:30</span></li>
+                <li>华北黄淮明日告别重污染 南方升温不断<span>2017-02-01&nbsp;&nbsp;08:47:30</span></li>
+            </ul>
+        </div>
+        <!--article_tittle结束-->
+   </div>
+   <!--container结束-->
+
+   <!--footer部分-->
+   <div id="foot"></div>
+   <!--footer结束-->
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<!-- create By Lynn 2017-04-01-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公司新闻</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/company_news.css"/>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/publicUrl.js" ></script>
+  <script type="text/javascript" src="js/info_policy_notice.js" ></script>
+<!--  <script src="js/jquery.page.js"></script>-->
+  <script>
+  		$(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+  </script>
+</head>
+<body>
+     <!-- 导航栏 -->
+   <div id="top"></div>
+
+   <!-- 内容部分 -->
+   <div class="w pagenav">
+	<ul>
+	  <li>当前位置：</li>
+	  <li><a href="index.html">首页</a></li>
+	  <li>></li>
+	  <li><a href="information_center.html">资讯中心</a></li>
+	  <li>></li>
+	  <li><a href="#" id="currentPager"></a></li>
+	</ul>
+	</div>
+	<div class="w content clearfix">
+       <div class="main_content">
+         <ul id="newInfoUl">
+         
+         </ul>
+          <div class="news_list_page">
+          <ul class="news_list_page_nav">
+            <li class="prev_page" onclick="prevPage()"><img src="img/emerInfo/左尖.png" alt=""></li>
+            <li class="currentPage" id="currentPage">1</li>
+            <li >/</li>
+            <li class="last_page total" id="totalPage">629</li>
+            <li class="next_page" onclick="nextPage()"><img src="img/emerInfo/右尖.png" alt=""></li>
+          </ul>
+    </div>
+
+       </div>
+
+
+       <div class="column">
+       <div class="column_up">
+          <h2>热门资讯排行榜</h2>
+          <ul id="ranking">
+         
+          </ul>
+          
+       </div>
+
+       </div>
+	
+	
+	</div>
+
+
+    
+
+  <!-- footer -->
+   <div id="foot"></div>
+</body>
+</html>

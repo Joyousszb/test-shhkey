@@ -1,0 +1,284 @@
+.headline{
+	width: 1137px;
+	height: 40px;
+	font-size: 16px;
+	color: #087F55;
+	margin-left: 6%;
+	position: relative;
+	text-indent: 10px;
+	padding-top: 15px;
+}
+.headline1{
+	width: 100%;
+}
+
+.headline>span{
+	height: 20px;
+	width: 3px;
+	background-color: #258364;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+
+/*-----------------------------------------------*/
+
+.bigbox{
+	width: 1137px;
+	margin-left: 6%;
+	background-color: #ffffff;
+	border: 1px #E6E6E6 solid;
+}
+.bigbox,.headline{
+	margin: 0 auto;
+}
+
+
+
+#address>#address_box>p{
+	width: 97%;
+	height: 20px;
+	padding: 10px 5px;
+	margin: 10px;
+	background-color: #EDEDED;
+}
+#address>#address_box>p>span,.bigbox3 span{
+	float: right;
+	color: #7EA1CE;
+}
+
+#add_address{
+	background-color: #167A58;
+	color: #ffffff;
+	height: 30px;
+	width: 120px;
+	font-size: 14px;
+	padding-top: 15px;
+	text-align: center;
+	margin: 10px;
+}
+
+#box-middle{
+	position: relative;
+	border:none;
+	background-color: #F8F8F8;
+}
+#box-middle .headline{
+	margin-left: 0;
+}
+#box-middle>div:nth-child(2){
+	position: absolute;
+	top: 0;
+	left: 387px;
+}
+#box-middle>div:nth-child(3){
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
+
+.bigbox3{
+	width: 315px;
+	border: 1px solid #E6E6E6;
+	height: 20px;
+	background-color: #ffffff;
+	color: #494949;
+	padding: 23px;
+	position: relative;
+}
+.bigbox3 p{
+	position: absolute;
+	top: 21px;
+	left: 50px;
+}
+#bigbox4{
+	height: 100px;
+	margin-bottom: 40px;
+}
+#bigbox4 textarea{
+	border:none;
+	width: 100%;
+	height: 100%;
+	text-indent: 10px;
+	resize:none;
+}
+/*-----------------------产品清单---------------------*/
+
+#goods dt{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #F4F4F4;
+	text-indent: 15px;
+}
+#goods>dl,#goods>dl>dt,#goods>dl>dd{
+	width: 100%;
+	color: #B5B5B5;
+	font-size: 14px;
+}
+#goods>dl>dd{
+	border-bottom: 1px solid #E6E6E6;
+}
+#goods>dl>dt>span{
+	margin-right: 150px;
+}
+#goods>dl>dt>span:first-child{
+	margin-right: 500px;
+}
+
+
+/*---------------------遮罩层-------------------------*/
+#mask_layer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background-color: #000000;
+	z-index: 5;
+	display: none;
+}
+/*-----------------------------选择配送地址-----------------------------*/
+#choice_time,#add_new_address,#choice_express{
+	z-index: 6;
+	border: 1px solid gray;
+	background-color: #ffffff;
+	position: fixed;
+	display: none;
+	width: 300px;
+	height: 280px;
+	top: 30%;
+	left: 40%;
+}
+#choice_time h2,#add_new_address h2,#choice_express h2{
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	text-align: center;
+	color: #4E4E4E;
+	font-size: 16px;
+	position: relative;
+}
+#choice_time h2>span,#add_new_address h2>span,#choice_express h2>span{
+	position: absolute;
+	top: -20px;
+	right: 5px;
+}
+#choice_time li,#choice_express li{
+	width: 100%;
+	height: 30px;
+	text-indent: 25px;
+	color: #959595;
+	padding-top: 10px;
+}
+#choice_time>input,#choice_express>input{
+	width: 230px;
+	height: 30px;
+	background-color: #167A58;
+	color: #ffffff;
+	margin-left: 30px;
+	margin-top: 40px;
+	border: none;
+}
+/*--------------添加新地址----------------------*/
+.border_red{
+    border: 1px solid red;
+}
+#add_new_address{
+	width: 440px;
+	height: 410px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-220px,-205px);
+}
+#add_new_address>form>p{
+	text-indent: 15px;
+	height: 40px;
+	line-height: 25px;
+	color: #2D2D2D;
+	margin-left:35px;
+}
+#add_new_address>form>p>span{
+	color: red;
+}
+#add_new_address>form>p>input{
+	width: 262px;
+	height: 27px;
+	text-indent: 3px;
+	margin-left: 6px;
+	color: rgb(167,167,167);
+	border: 1px solid rgb(231,231,231);
+}
+#add_new_address>form>input{
+	height:35px;
+	width: 253px;
+	background-color: #167A58;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	line-height: 27px;
+	margin-left: 97px;
+	margin-top: 12px;
+}
+#consignee{
+	width: 150px;
+}
+#add_new_address>form select{
+	width: 80px;
+	height: 31px;
+	color: rgb(167,167,167);
+	border: 1px solid rgb(231,231,231);
+	/*讲默认的select选择框样式清除*/
+	appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /*自定义小箭头图片*/
+    background-image: url("img/a.png");
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+    background: url("../img/矩形 36 拷贝 1.png") 66px 13px no-repeat;
+}
+/*--------------------------------------*/
+#box_bottom{
+	width: 1137px;
+	margin-left: 6%;
+	color: #F81A13;
+	margin: 0 auto;
+}
+#box_bottom p{
+	width: 100%;
+	clear: both;
+}
+#box_bottom p span{
+	float: right;
+	margin-bottom: 13px;
+}
+
+.balck{
+	color: #3B3B3B;
+	padding-left: 10px;
+}
+.red{
+	font-size: 16px;
+}
+#red{
+	font-size: 20px;
+}
+.indent{
+	color: #C0C0C0;
+	height: 30px;
+	line-height: 30px;
+}
+#submit{
+	background-color: #FF8A00;
+	height: 35px;
+	width: 170px;
+	border: none;
+	margin-left: 20px;
+	color: #ffffff;
+}
+
+.indent a,.indent a:hover{
+	color: #62A4F2;
+}

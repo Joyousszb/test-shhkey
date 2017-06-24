@@ -1,0 +1,68 @@
+<!--/* create By Lynn 2017-04-01*/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/company_news.css"/>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/publicUrl.js" ></script>
+  <script type="text/javascript" src="js/info_companyNewsDetail.js" ></script>
+<script type="text/javascript">
+		$(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+	</script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div id="top"></div>
+   
+
+<!-- 内容部分 -->
+   <div class="w pagenav">
+	<ul>
+	  <li>当前位置：</li>
+	  <li><a href="index.html">首页</a></li>
+	  <li>></li>
+	  <li><a href="information_center.html">资讯中心</a></li>
+	  <li>></li>
+	  <li><a href="information_center.html">资讯详情</a></li>
+	</ul>
+	</div>
+	<div class="w clearfix">
+	    <div class="new_content">
+	    	<h1 id="newsTitle">云南大批鲜花上市供应节日市场</h1>
+	    	<span id="creatTime">2017-02-01</span>
+	    	<div id="newsContet"></div>
+	    </div>
+	    <div class="column">
+	      <div class="column_up">
+            <h2>热门资讯排行榜</h2>
+            <ul id="ranking">
+          	  
+            </ul>
+          </div>
+          <!--<div class="column_down">
+          <h2>特色农产品</h2>
+          <ul>
+          	<li>
+          	    <a href="#"><img src="img/shop_pic1.jpg" alt=""></a>
+          	    <p><a href="#">新鲜家鸡蛋热卖...</a></p>
+          	</li>
+          
+          </ul>
+        </div>-->
+	    </div>
+	</div>
+	
+	
+ 
+ 
+<!-- footer -->
+  <div id="foot"></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.nformation-dl-title>p>span{
+	width: 50px;
+	margin-right: 20px;
+}
+.information-dl video{
+	width: 900px;
+	height: 350px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+.information-dl p{
+	width: 950px;
+	height: 20px;
+	line-height: 20px;
+	margin: 5px auto;
+}
+/*--------------------------*/

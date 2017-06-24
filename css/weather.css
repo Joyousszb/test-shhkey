@@ -1,0 +1,31 @@
+body{margin:0;padding:0;font-size:12px;font-fanliy:"宋体",arial;}
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, fieldset, textarea, th, td{ margin: 0;padding: 0;}
+em{font-size: 12px;font-weight: normal;font-style: normal;}
+ul{list-style-type:none;margin:0;padding:0;}
+li{list-style-type:none;margin:0;padding:0;}
+img{border:0;}
+a:link,a:visited,a:hover,a:active{color:#fff;text-decoration:none;}
+a:hover{color:#333;text-decoration: underline;}
+.box250s,.box250s1{ float:left; width:384px; height:45px; line-height:45px; color:#555;text-indent:15px;}
+.box250s1{ width:384px; margin-bottom:10px;margin-top: 30px;}
+.box250s h3,.box250s1 h3{ float:left; font-size:20px;font-weight: 100;color: #fff;}
+.box250s a.more,.box250s1 a.more{ float:right; padding:0 10px 0 0; font-size:12px; font-weight:normal; color:orangered;}
+.box250c{ float:left; width:384px;height: 629px;margin-top:6px;}
+.tqindex{ clear:both; height:135px;color: #fff;}
+.tqindtoday {width:140px;margin:0 auto;	text-align:center;	float:left;}
+.tqindtoday h3{ font-family: "微软雅黑", "宋体"; font-size:14px;font-weight: 100; padding:7px 0}
+.tqindtoday li,.tqxiangxi li {line-height:25px;font-size:14px;overflow:hidden;color: #fff;}
+.tqindtoday li img {width:54px;height:54px;margin-bottom:1px;margin-right:5px;}
+.tqxiangxi {width:125px;margin:0 auto;text-align:center;float:right;padding-right: 15px;}
+.tqxiangxi h3{ font-family: "微软雅黑", "宋体"; font-size:14px; font-weight: 100; padding:8px 0}
+.tqxiangxi li{text-align: center;}
+.tqxiangxi li img {width:54px;height:54px;margin-bottom:1px;}
+.box250c .wt,.box250c .wt_b{width: 352px;float: left;border-bottom:1px dotted #fff;margin:4px 32px;margin:5px 8px 4px 8px\9;_margin: 4px 4px 4px 4px; text-align:center;}
+.box250c .wt_b{ border-bottom:none;}
+.box250c .wt dt{ padding-bottom:5px; color:#0f705c; font-weight:600;}
+.box250c .wt dt span{ padding-bottom:5px; padding-left:40px; font-weight:normal;}
+.box250c .wtpic {line-height: 50px;height: 50px;width: 175px;_width: 175px;float: left;text-align: center;}
+.box250c .wtpic img{ padding-right:5px; _width:46px; _height:46ox;}
+.box250c .wt1 {width: 110px;float: left; padding-right:10px;color: green;}
+.box250c .wtline {width: 100%;float: left;height: 22px;line-height: 22px; font-weight:normal; }
+.weatheropt a{ color:orangered;}

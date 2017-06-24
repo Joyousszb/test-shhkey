@@ -1,0 +1,268 @@
+<!--create By Lynn 2017-04-01-->
+
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" href="css/vipCenter.css" />
+  		<script src="js/jquery-2.1.1.min.js"></script>
+  		<script type="text/javascript" src="js/publicUrl.js" ></script>
+ 		<script type="text/javascript" src="js/vipOrder.js" ></script>
+	<script type="text/javascript" src="js/top.js" ></script>
+  <script>
+  $(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+		
+	</script>
+</head>
+	  <!-- 导航栏 -->
+   <div id="top"></div>
+
+
+ <!-- 主页部分 -->
+<div id="main_banner" class="main_banner">
+  	<div class="container">
+	    	<div class="container-top">当前位置：<a href="index.html">首页</a>>会员中心><span>我的订单</span></div>
+	    	<div class="container-center">
+	    		<div class="container-left">
+		    		<ul class="container-left-top">
+		    			<li>会员中心</li>
+		    		</ul>
+		    		<ul class="container-left-bottom">
+		    			<li><a  href="vipCenter.html">会员介绍</a><span ><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipInfo.html" >个人信息</a><span><img src="img/个人中心.png"></span></li>		    		
+		    			<li><a href="vipAddress.html" >收获地址</a><span><img src="img/个人中心.png"></span></li>
+		    			<li><a href="vipOrder.html" style="color: #167A58;">我的订单</a><span style="visibility: visible;"><img src="img/个人中心.png"></span></li>     
+		    		</ul>
+		    	</div>
+		    	<div class="container-right">
+					<div class="tab">
+						<div class="order"><!--我的订单-->
+							<div class="order-tab">
+								<ul class="btn"><!--选项卡区-->
+								    <li class="curli" style="background-color:#EF6E09;color:#fff">所有订单</li>
+								    <li class="btnli" style="color:#000">待付款</li>
+								    <li class="btnli" style="color:#000">待发货</li>
+								    <li class="btnli" style="color:#000">待收货</li>
+								</ul>
+							</div>			
+							<div class="order-content"><!--内容区-->
+							    <div id="main0"><!--所有订单-->
+							    	
+							    		<table class="main0-table-header" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input id="checkedAll" class="checkall" type="checkbox"></td>
+							    				<td style="text-align: left;width: 324px;">商品</td>
+							    				<td>单价</td>
+							    				<td>数量</td>
+							    				<td>小计</td>
+							    				<td>交易状态</tb>
+							    				<td>操作</td>
+							    			</tr>
+							    		</table>
+							    		<div class="main0Div mainDiv">
+							    		<!--<table class="main0-table-content allOrder" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input class="allOrderChecked ch" type="checkbox"></td>
+							    				<td style="text-align: left;">2017-03-08</td>
+							    				<td colspan="6">订单号：3069959403806413</td>
+							    			</tr>
+							    			<tr>
+							    				<td><input type="checkbox"></td>
+							    				<td><img /></td>
+							    				<td>商品简介</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td >1</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td width="91px" rowspan="2" style="color:#e82330">待付款</td>
+							    				<td rowspan="2" width="189px">
+							    					<button class="check-btn">立即支付</button>
+							    					<button class="cancel-btn" onclick="$('#cancerOrderModal').toggle();$('.bg-grey').show();">取消订单</button>
+							    				</td>			    				
+							    			</tr>
+							    			<tr>
+							    				<td><input type="checkbox"></td>
+							    				<td><img></td>
+							    				<td>商品简介</td>
+							    				<td><span>￥</span><span>75：00</span></td>
+							    				<td>1</td>
+							    				<td><span>￥</span><span>75：00</span></td>			    				
+							    			</tr>			    			
+							    		</table>
+							    		<table class="main0-table-content exchangeSuccess" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input class="exchangeSuccessCheck ch" type="checkbox"></td>
+							    				<td style="text-align: left;">2017-03-08</td>
+							    				<td colspan="6">订单号：3069959403806413</td>
+							    			</tr>
+							    			<tr>
+							    				<td><input type="checkbox"></td>
+							    				<td><img></td>
+							    				<td>商品简介</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td >1</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td width="91px">交易成功</td>
+							    				<td width="189px">			    					
+							    					<button class="checkLogistics-btn">查看物流</button>
+							    				</td>			    				
+							    			</tr>			    					    			
+							    		</table>
+							    		<table class="main0-table-content stayingReceive" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input class="stayingReceiveCheck ch" type="checkbox"></td>
+							    				<td style="text-align: left;">2017-03-08</td>
+							    				<td colspan="6">订单号：3069959403806413</td>
+							    			</tr>
+							    			<tr>
+							    				<td><input type="checkbox"></td>
+							    				<td><img></td>
+							    				<td>商品简介</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td >1</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td width="91px">待收货</td>
+							    				<td width="189px">			    					
+							    					<button class="checkLogistics-btn">查看物流</button>
+							    				</td>			    				
+							    			</tr>			    					    			
+							    		</table>
+							    		<table class="main0-table-content stayingReceive" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input class="stayingReceiveCheck ch" type="checkbox"></td>
+							    				<td style="text-align: left;">2017-03-08</td>
+							    				<td colspan="6">订单号：3069959403806413</td>
+							    			</tr>
+							    			<tr>
+							    				<td><input type="checkbox"></td>
+							    				<td><img></td>
+							    				<td>商品简介</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td >1</td>
+							    				<td width="91px"><span>￥</span><span>75：00</span></td>
+							    				<td width="91px">待收货</td>
+							    				<td width="189px">			    					
+							    					<button class="checkLogistics-btn">查看物流</button>
+							    				</td>			    				
+							    			</tr>			    					    			
+							    		</table>-->
+							   			</div>
+							    </div><!--所有订单结束-->
+							    <div id="main1" style="display: none">		    	
+							    	<table class="main0-table-header" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input id="main1checkall" class="checkall" type="checkbox" disabled="disabled"></td>
+							    				<td style="text-align: left;width: 324px;">商品</td>
+							    				<td>单价</td>
+							    				<td>数量</td>
+							    				<td>小计</td>
+							    				<td>交易状态</tb>
+							    				<td>操作</td>
+							    			</tr>
+							    	</table>
+							    	<div class="main1Div mainDiv">
+							    		
+							    		
+							    	</div>
+							    </div>
+							    <div id="main2" style="display: none">
+							    		<table class="main0-table-header" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input id="main2checkall" class="checkall" type="checkbox" disabled="disabled"></td>
+							    				<td style="text-align: left;width: 324px;">商品</td>
+							    				<td>单价</td>
+							    				<td>数量</td>
+							    				<td>小计</td>
+							    				<td>交易状态</tb>
+							    				<td>操作</td>
+							    			</tr>
+							    		</table>
+							    	<div class="main2Div mainDiv">
+							    		
+							    	</div>
+							    </div>
+							    <div id="main3" style="display: none">
+							    		<table class="main0-table-header" cellspacing="0" cellpadding="0">
+							    			<tr>
+							    				<td style="width: 60px;"><input id="main3checkall" class="checkall" type="checkbox" disabled="disabled"></td>
+							    				<td style="text-align: left;width: 324px;">商品</td>
+							    				<td>单价</td>
+							    				<td>数量</td>
+							    				<td>小计</td>
+							    				<td>交易状态</tb>
+							    				<td>操作</td>
+							    			</tr>
+							    		</table>
+							    		<div class="main3Div mainDiv">
+							    	
+							    		</div>
+							    </div>
+							</div><!--内容区-->
+					    </div><!--我的订单-->
+					    <div class="logistics-info" style="display: none;"><!--查看物流-->
+					    	<div>
+					    		<span style="font-size: 18px;color: #167A58;">查看物流信息</span><span id="reture" style="float: right;cursor: pointer;">< 返回</span>
+					    	</div>
+					    	<div class="track-rcol">
+								<div class="track-list">
+									<div style="display:none;text-align:center;color:#9c9c9c">暂无该订单的物流信息...</div>
+									<ul id="track-list-ul">
+										
+									</ul>
+								</div>
+							</div>
+					    	<div style="border-bottom: 1px dashed #ccc;margin: 40px auto;"></div>
+					    	<div class="logistics-info-bottom">
+					    		<div id="logis-info-one">
+					    			<div id="orderNumber">运单编号：<span >----</span></div>
+					    			<div id="logisCompany">物流公司：<span>----</span></div>
+					    			<!--<div id="serviceTel">客服电话：<span>----</span></div>-->
+					    		</div>
+					    		<!--<div id="logis-info-two">
+					    			<div id="shipAddress">发货地址：<span>广州市海珠区仲恺路500号仲恺学生公寓D栋</span></div>
+					    			<div id="shipPostcode">510000</div>
+					    			<div id="shipper">发货人</div><div id="shipperPhone" >13203984747</div>
+					    		</div>-->
+					    		<div id="logis-info-three">
+					    			<div id="takeAddress">收获地址：<span>----</span></div>
+					    			<div id="takePostcode">----</div>
+					    			<div id="taker">----</div><div id="takerPhone">---</div>
+					    		</div>
+					    	</div>
+					    </div><!--查看物流-->
+					
+						
+					
+					</div>
+				</div>
+	    </div>
+</div>
+<!--遮罩层-->
+<div class="bg-grey"></div>
+<!--取消订单模态框-->
+<div id="cancerOrderModal">	            
+    <div id="all">
+        <div id="header-div">                                  	
+               <span onclick="$('#cancerOrderModal').toggle();$('.bg-grey').hide()"><img src="img/X.png"/></span>
+        </div>
+        <div id="content"> 
+        	<div style="font-size: 20px;">操作提示</div>
+        	<div style="margin-top: 26px;height:90px;"><img src="img/叹号.png"></div>
+        	<div style="font-size: 16px;color: #666;">你确定要删除此订单吗？</div>
+        </div>
+        <div id="footer-div">   
+        	 <button id="sure-btn" onclick="sureCancer()">确&nbsp;&nbsp;定</button>
+            <button id="cancer-btn" onclick="$('#cancerOrderModal').toggle();$('.bg-grey').hide()">取&nbsp;&nbsp;消</button>
+        </div>
+    </div>
+</div>
+						
+  <div style="clear: both;"></div>
+   <!-- footer -->
+   <div id="foot"></div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+.container{
+	width: 1150px;
+	height: auto;
+	    margin: 0 auto 15px auto;
+	font-size: 14px;
+}
+.container>.current_position{
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+	color: rgb(103,103,103);
+}
+.container>.current_position>a,.container>.current_position>a:hover{
+	color: rgb(103,103,103);
+}
+/**information_nav部分**/
+.container>.information_nav{
+	width: 100%;
+	height: auto;
+	background: white;
+}
+.container>.information_nav>.select_location{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px dashed rgb(229,229,229);
+}
+.container>.information_nav>.select_location>dl,.container>.information_nav>.select_weather>dl{
+    width: 100%;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+}
+.container>.information_nav>.select_location>dl>dt{
+	width: 10%;
+    text-align: center;
+    color: rgb(187,187,187);
+    float: left;
+    margin-top: 15px;
+}
+.container>.information_nav>.select_location>dl>dd{
+	width: 90%;
+	float: left;
+	color: rgb(83,83,83);
+}
+.container>.information_nav>.select_location>dl>dd>ul{
+	width: 100%;
+}
+.container>.information_nav>.select_location>dl>dd>ul>li{
+	width: 61px;
+	text-align: center;
+	float: left;
+	margin: 15px 0;
+}
+.container>.information_nav>.select_time{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.container>.information_nav>.select_time>dl{
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	clear: both;
+}
+.container>.information_nav>.select_time>dl>dt{
+	width: 10%;
+    text-align: center;
+    color: rgb(187,187,187);
+    float: left;
+}
+.container>.information_nav>.select_time>dl>dd{
+	width: 90%;
+}
+.container>.information_nav>.select_time>dl>dd>input{
+	height: 30px;
+	text-indent: 8px;
+	border: 1px solid rgb(229,229,229);
+	color: rgb(83,83,83);
+	margin-left: 15px;
+}
+.container>.information_nav>.select_time>dl>dd>span{
+	margin-left: 15px;
+}
+.container>.information_nav>.select_weather{
+	width: 100%;
+	height: 60px;
+}
+.container>.information_nav>.select_weather>dl>dt{
+    width: 10%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(187,187,187);
+    float: left;
+}
+.container>.information_nav>.select_weather>dl>dd{
+	width: 90%;
+	height: 60px;
+	float: left;
+}
+.container>.information_nav>.select_weather>dl>dd>ul{
+	width: 100%;
+	height: 60px;
+	padding-left: 15px;
+}
+.container>.information_nav>.select_weather>dl>dd>ul>li{
+    float: left;
+    width: 236px;
+    height: 60px;
+    line-height: 60px;
+    color: rgb(83,83,83);
+}
+/**article_tittle部分**/
+.container>.article_tittle{
+	width: 100%;
+	height: auto;
+	background: white;
+	margin-top: 15px;
+	border: 2px solid rgb(229,229,229);
+}
+.container>.article_tittle>ul{
+	width: 95%;
+	height: auto;
+	margin: 0 auto 20px;
+}
+.container>.article_tittle>ul>li{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 2px solid rgb(236,236,236);
+	color: rgb(83,83,83);
+}
+.container>.article_tittle>ul>li>span{
+	float: right;
+	margin-right: 5px;
+}

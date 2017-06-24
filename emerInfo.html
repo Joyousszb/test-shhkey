@@ -1,0 +1,127 @@
+
+<!-- create By Lynn 2017-04-01-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>应急信息</title>
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/emerInfo.css"/>
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script> 
+  <script type="text/javascript" src="js/publicUrl.js" ></script>
+  <script src="js/plugin/laydate/laydate.js"></script>
+  <script type="text/javascript" src="js/emerInfo.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#top').load('top.html');
+			$('#foot').load('footer.html');
+		});
+	</script>
+</head>
+<body>
+   <!-- 导航栏 -->
+  <div id="top"></div>
+
+
+  <!-- 应急信息page -->
+  <div class="emerInfo_box">
+  <!-- 当前位置 -->
+    <div class="w emerInfo_path">
+      <span>当前位置：<a href="index.html">首页</a> ><a href="emerInfo.html">应急信息</a><a href="#"> > 气象警报信息</a></span>
+    </div>
+    <!--content头部开始-->
+     <div class="container">
+        <div class="information_nav">
+            <!--select_location开始-->
+            <div class="select_location">
+                <dl>
+                    <dt>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方&nbsp;:</dt>
+                    <dd>
+                        <ul>
+                            <li>北京</li>
+                            <li>北京er</li>
+                            <li>北re京</li>
+                            <li>北京</li>
+                            <li>北r京</li>
+                            <li>北re京</li>
+                            <li>北京</li>
+                            <li>北w京</li>
+                            <li>北rw京</li>
+                            <li>北rw京</li>
+                            <li>北w京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                            <li>北京</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <!--select_location结束-->
+            <!--select_time开始-->
+            <div class="select_time">
+                <dl>
+                    <dt>时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间&nbsp;:</dt>
+                    <dd>
+                        <input type="text" value="2017-02-01" style="background: url(img/日历.png) 107px 5px no-repeat;" onclick="laydate()">
+                        <span>-</span>
+                        <input type="text" value="2017-02-02" style="background: url(img/日历.png) 107px 5px no-repeat;" onclick="laydate()">
+                    </dd>
+                </dl>
+            </div>
+            <!--select_time结束-->
+
+        </div>
+
+   </div>
+   <!--<!--content头部结束-->
+    
+  <!-- 应急信息页主要内容 -->
+    <div class="w emerInfo_content">
+  <!-- 天气模块 -->
+      <div class="emerInfo_weather">
+  <!-- 今日天气 -->
+      	<iframe name="weather_inc" src="emerWeather.html" width="384px" height="680" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>  
+      </div>
+  
+  	
+  <!-- 信息模块 -->
+      <div class="emerInfo_news_list">
+        <div class="news_list_body">
+        <ul class="news_list_content">
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+          <li><span>2017年3月16日15:48:08</span><a href="#">这是新闻标题</a></li>
+        </ul> 
+        </div>
+        <div class="news_list_page">
+          <ul class="news_list_page_nav">
+            <li class="prev_page"><img src="img/emerInfo/左尖.png" alt=""></li>
+            <li class="currentPage">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>...</li>
+            <li class="last_page total"><span>629</span></li>
+            <li class="next_page"><img src="img/emerInfo/右尖.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- footer -->
+   <div id="foot"></div>
+	
+</body>
+</html>
